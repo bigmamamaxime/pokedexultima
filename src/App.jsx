@@ -5,7 +5,6 @@ import "./shared/global/css/Global.css"
 export const App=() => {
   return (
       <Routing>
-        <NavigationBar />
       </Routing>
   );
 }

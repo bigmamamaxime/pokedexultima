@@ -10,7 +10,7 @@ export const SearchView = () => {
     const fetchDataFromExternalAPI = () => {
         
         PokemonService.searchForPokemon(search.toLowerCase())
-        .then((response) => setData(response.data))
+        .then((response) => setData(response.data)+console.log(response.data))
         .catch((error) => console.log(error))
     }
 
@@ -25,6 +25,12 @@ export const SearchView = () => {
                 <img className="pkmimg" src={data.sprites.versions["generation-vii"]["ultra-sun-ultra-moon"].front_default} alt="Error..." />
                 <h3>Name: {makeFirstCharUpperCase(data.name)}</h3>
                 <h3>Ability: {makeFirstCharUpperCase(data.abilities[0].ability.name)}</h3>
+                <h3>Stats</h3>
+                <h3>Attack: {data.stats[1].base_stat}</h3>
+                <h3>Defense: {data.stats[2].base_stat}</h3>
+                <h3>Sp. Attack: {data.stats[3].base_stat}</h3>
+                <h3>Sp. Defense: {data.stats[4].base_stat}</h3>
+                <h3>Speed: {data.stats[5].base_stat}</h3>
             </div>
         }
         if(data) {

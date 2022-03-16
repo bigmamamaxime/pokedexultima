@@ -1,0 +1,15 @@
+body {
+    background-color: lightblue;
+    color: aliceblue;
+}
+.pkmimg {
+    display: flex;
+    width: 200px;
+    height: 200px;
+    align-items: center;}
+
+.searchbutton {
+    align-self: center;
+    background-color: cornflowerblue;
+    color: whitesmoke;
+}

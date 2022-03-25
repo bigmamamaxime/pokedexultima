@@ -6,10 +6,23 @@ body {
     display: flex;
     width: 200px;
     height: 200px;
-    align-items: center;}
+    align-items: center;
+}
 
 .searchbutton {
     align-self: center;
+    margin-left: 70px;
+    margin-top: 15px;
     background-color: cornflowerblue;
     color: whitesmoke;
+    height: 1cm;
+}
+
+.infotext {
+    margin-left: 40px;
+    margin-top: 100px;
+}
+
+.inputspace {
+    margin-left: 1cm;
 }

@@ -1,24 +1,46 @@
 .NavigationBarWrapper {
     display: grid;
-    grid-template-columns: repeat(10, 1fr);
+    grid-template-columns: repeat(9, 1fr);
     background-color: cornflowerblue;
 }
 
+.TitleText1 {
+    color:rgb(255, 28, 28);
+    font-size: 350%;
+    grid-column: 3/9;
+    grid-row: 1/1;
+}
+
+.TitleText2 {
+    color:rgb(255, 28, 28);
+    font-size: 100%;
+    grid-column: 9/9;
+    grid-row: 1/1;
+}
+
 .logotype {
-    width: 100px;
-}
-
-.signIn {
-    grid-column: 9/10;
-    align-self: center;
-    border: 5px;
-}
-
-.logotype, 
-.signIn {
+    width: 125px;
     cursor: pointer;
+    grid-column: 5/9;
+    grid-row: 1/1;
+    align-self: center;
 }
 
-.profile {
-    grid-column: 8/10;
+.dDMenu {
+    display: none;
+    position: absolute;
+    background-color:cornflowerblue;
+    z-index: 10;
+    min-width: 50px;
+}
+
+.logotype:hover .dDMenu {
+    display: block;
+}
+
+.dDMenu a {
+    display:block;
+    cursor: pointer;
+    color:rgb(255, 28, 28);
+    padding: 10px;
 }

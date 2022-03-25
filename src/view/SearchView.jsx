@@ -40,8 +40,9 @@ export const SearchView = () => {
     return (
         <div>
             <h1>{search}</h1>
-            <span>Search for Pokémon: </span>
-            <input onChange={(event) => setSearch(event.target.value)} />
+            <span className="infotext">SEARCH FOR POKÉMON: </span>
+            < br />
+            <input className="inputspace" onChange={(event) => setSearch(event.target.value)} />
 
             <br />
             <button className="searchbutton" onClick={() => fetchDataFromExternalAPI()}>I CHOOSE YOU!</button>
